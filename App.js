@@ -1,12 +1,19 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
+ * Dads App
  *
  * @format
  * @flow strict-local
  */
 
- import React, { useEffect } from 'react';
+ import React, { useEffect, useRef } from 'react';
+ import {
+   StyleSheet,
+   ImageBackground,
+   Animated,
+   View,
+   TouchableOpacity
+ } from 'react-native';
+
  import { NavigationContainer } from '@react-navigation/native';
  import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
  import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -26,34 +33,92 @@
  import ContactsScreen from './screens/ContactsScreen';
  import ForumHomeScreen from './screens/ForumHomeScreen';
  import ForumChildrenScreen from './screens/ForumChildrenScreen'
+ import ForumPostScreen from './screens/ForumPostScreen'
+ import FlowchartScreen from './screens/FlowchartScreen'
+ // import FlowchartScreen from './screens/FlowchartQuizScreen'
+ import UserForumPostScreen from './screens/UserForumPostScreen'
 
  const Stack = createNativeStackNavigator();
  const ChatStack = createNativeStackNavigator();
  const ForumStack = createNativeStackNavigator();
+ const HomeStack = createNativeStackNavigator()
  const Tab = createBottomTabNavigator();
 
+const screenOptions = ({ navigation }) => ({
+  headerStyle: { backgroundColor: 'transparent', elevation: 0, shadowOpacity: 0 },
+  headerTransparent: true,
+  headerShadowVisible: false,
+  headerBackVisible: false,
+  headerTitle: '',
+  headerLeft: ({ canGoBack }) => canGoBack ? <HeaderBackButton navigation={navigation} /> : (<></>)
+})
+
+
+const headerBackButtonStyles = StyleSheet.create({
+    container: {
+        backgroundColor: '#80af92',
+        width: 45,
+        height: 45,
+        borderRadius: 50,
+        padding: 10,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        //SHADOW
+        shadowColor: '#adadad',
+        elevation: 3,
+        shadowOffset: { width: -2, height: 2 },
+        shadowOpacity: 0.7,
+        shadowRadius: 1,
+    },
+})
+
+const HeaderBackButton = ({ navigation }) => (
+    <TouchableOpacity
+      onPress={() => { navigation.goBack(); } }
+      style={headerBackButtonStyles.container} >
+      <Icon name="arrow-left" size={25} color='white' />
+    </TouchableOpacity>
+)
 
 
 export const UserContext = React.createContext();
 
  const ChatScreens = () => (
-   <ChatStack.Navigator>
+   <ChatStack.Navigator screenOptions={screenOptions} >
      <ChatStack.Screen component={ContactsScreen} name="Contacts" />
      <ChatStack.Screen
        component={ChatScreen}
        name="Chat"
-       options={({ route }) => ({ title: route.params.name })}
+       options={({ route }) => ({ title: "" })}
      />
    </ChatStack.Navigator>
  );
 
  const ForumScreens = () => (
-   <ForumStack.Navigator>
+   <ForumStack.Navigator initialRouteName="Forum Home" screenOptions={screenOptions} >
      <ForumStack.Screen component={ForumHomeScreen} name="Forum Home" options={{ headerShown: false }} />
-     <ForumStack.Screen component={ForumChildrenScreen} name="Forum Children" options={({ route }) => ({ title: route.params.selectedTopic }) } />
-   {/* <ForumStack.Screen component={() => () } name="Post" /> */}
+     <ForumStack.Screen component={ForumChildrenScreen} name="Forum Children" options={({ route }) => ({ title: route.params.selectedTopic, }) } />
+     <ForumStack.Screen
+      component={ForumPostScreen}
+      name="Post"
+      options={({ route }) => ({ title: '' })}
+    />
+    <ForumStack.Screen component={UserForumPostScreen} name="Forum Post" options={{headerShown: true, title: 'Create a Post'}} />
    </ForumStack.Navigator>
  )
+
+const HomeScreens = () => (
+  <HomeStack.Navigator screenOptions={screenOptions}>
+    <HomeStack.Screen component={HomeScreen} name="Home" options={{ headerShown: false }} />
+    <HomeStack.Screen component={FlowchartScreen} name="Flowchart" options={{ headerShown: true }} />
+    <HomeStack.Screen component={ForumChildrenScreen} name="Forum Children" options={({ route }) => ({ title: route.params.selectedTopic, }) } />
+    <HomeStack.Screen component={ForumPostScreen} name="Post" options={({ route }) => ({ title: '', headerShown: true })} />
+    <HomeStack.Screen component={UserForumPostScreen} name="Forum Post" options={{headerShown: true, title: 'Create a Post'}} />
+  </HomeStack.Navigator>
+)
+
+
 
 
  const Tabs = () => (
@@ -75,8 +140,8 @@ export const UserContext = React.createContext();
        },
      }}>
      <Tab.Screen
-       name="Home"
-       component={HomeScreen}
+       name="Home Screens"
+       component={HomeScreens}
        options={{
          tabBarIcon: ({ color, size }) => (
            <Icon name="home" color={color} size={size} />
@@ -93,13 +158,13 @@ export const UserContext = React.createContext();
        }}
      />
      <Tab.Screen
-       name="Legal"
+       name="Forum"
        component={ForumScreens}
        options={{
          tabBarIcon: ({ color, size }) => (
            <Icon name="balance-scale" color={color} size={size} />
          ),
-       }}
+      }}
      />
      <Tab.Screen
        name="Profile"
@@ -113,23 +178,60 @@ export const UserContext = React.createContext();
    </Tab.Navigator>
  );
 
+const FADEDURATION = 3000
+
 export default function App() {
    const [initializing, setInitializing] = useState(true);
    const [user, setUser] = useState();
+   const [showSplash, setShowSplash] = useState(FADEDURATION)
+
+   const opacityRef = useRef(new Animated.Value(1)).current
+
 
    function onAuthStateChanged(user) {
-     setUser(user);
+     if (user) {
+       if (user.displayName) { setUser(user); return; }
+       user.updateProfile({ displayName: user.email.split('@')[0] }).then(() => {
+         setUser(user)
+       }).catch(error => console.log(error) )
+     }
+     if (!user) { setUser(false) } // logging out
      if (initializing) setInitializing(false);
    }
 
    useEffect(() => {
+
+     setTimeout(() => {
+       setShowSplash(false);
+     }, FADEDURATION);
+
      const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
      return subscriber; // unsubscribe on unmount
    }, []);
 
+   useEffect(() => {
+      Animated.timing(opacityRef, {
+        toValue: 0,
+        duration: FADEDURATION,
+        useNativeDriver: true,
+      }).start();
+   }, [opacityRef]);
+
    if (initializing) return null;
 
-   if (!user) return (
+   if (!user && showSplash) return (
+     <View style={{backgroundColor: '#80af92'}}>
+      <Animated.Image
+        source={ require('./assets/dads-beach-photo-crop.jpg') }
+        resizeMode="cover"
+        blurRadius={1}
+        fadeDuration={0}
+        style={{opacity: opacityRef, width: '100%', height: '100%'}} />
+      </View>
+    )
+
+
+   if (!user && !showSplash) return (
      <>
        <NavigationContainer>
          <Stack.Navigator
@@ -141,7 +243,7 @@ export default function App() {
      </>
    )
 
-   return (
+   if (user) return (
      <UserContext.Provider value={user}>
        <NavigationContainer>
          <Stack.Navigator
