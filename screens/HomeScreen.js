@@ -10,7 +10,6 @@ import { useGetArticleLinks } from '../hooks/useGetArticleLinks'
 import { randomChoice } from '../helperFunctions/randomGen'
 
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import { useMixpanel } from '../Analytics';
 
 
 
@@ -69,13 +68,6 @@ const ClickableIconRow = ({ label, link, iconName, color, isTop }) => (
 export default function Home({ navigation, route }) {
 
   const [user, setUser] = useState();
-
-  const mixpanel = useMixpanel();
-
-  useEffect(() => {
-    setUser(auth().currentUser)
-    mixpanel.identify(auth().currentUser.uid)
-  }, [])
 
   const { articleLinks, articleLinksError, articleLinksLoading } = useGetArticleLinks()
 

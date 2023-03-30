@@ -37,8 +37,6 @@
  import FlowchartScreen from './screens/FlowchartQuizScreen'
  import UserForumPostScreen from './screens/UserForumPostScreen'
 
- import { MixpanelProvider, useMixpanel }  from './Analytics';
-
  const Stack = createNativeStackNavigator();
  const ChatStack = createNativeStackNavigator();
  const ForumStack = createNativeStackNavigator();
@@ -285,14 +283,12 @@ export default function App() {
    return (
      <GestureHandlerRootView style={{ flex: 1 }}>
        <UserContext.Provider value={user}>
-         <MixpanelProvider>
            <NavigationContainer linking={linking}>
              <Stack.Navigator
                screenOptions={{ unmountOnBlur: true, headerShown: false }}>
                <Stack.Screen component={Tabs} name="HomeTabs" />
              </Stack.Navigator>
            </NavigationContainer>
-         </MixpanelProvider>
        </UserContext.Provider>
      </GestureHandlerRootView>
    );
