@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">541837863343-pp090i72vomk1searu2mr12hargun0eg.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">541837863343</string>
+    <string name="google_api_key" translatable="false">AIzaSyB_8izIU_xt53MNFmlw8WtN014uYXqPOjY</string>
+    <string name="google_app_id" translatable="false">1:541837863343:android:42109dd7f007831ba9675a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB_8izIU_xt53MNFmlw8WtN014uYXqPOjY</string>
+    <string name="google_storage_bucket" translatable="false">dadsapp-6a758.appspot.com</string>
+    <string name="project_id" translatable="false">dadsapp-6a758</string>
+</resources>
