@@ -1,0 +1,272 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.dadsapp"
+4    android:versionCode="2"
+5    android:versionName="1.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:2:3-64
+11-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:2:20-62
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->[:react-native-firebase_auth] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-68
+12-->[:react-native-firebase_auth] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-65
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[:react-native-firebase_auth] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-79
+13-->[:react-native-firebase_auth] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->[:react-native-community_netinfo] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-76
+14-->[:react-native-community_netinfo] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-73
+15
+16    <application
+16-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:3:3-16:17
+17        android:name="com.dadsapp.MainApplication"
+17-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:3:16-47
+18        android:allowBackup="false"
+18-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:3:162-189
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.6.0] C:\Users\sagar\.gradle\caches\transforms-3\dbb3b3140f76096c91a55d587721b8f4\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:3:81-115
+21        android:label="@string/app_name"
+21-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:3:48-80
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:3:116-161
+23        android:theme="@style/AppTheme"
+23-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:3:226-257
+24        android:usesCleartextTraffic="true" >
+24-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:3:190-225
+25        <activity
+25-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:4:5-15:16
+26            android:name="com.dadsapp.MainActivity"
+26-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:4:15-43
+27            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+27-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:4:77-186
+28            android:exported="true"
+28-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:4:262-285
+29            android:label="@string/app_name"
+29-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:4:44-76
+30            android:launchMode="singleTask"
+30-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:4:187-218
+31            android:windowSoftInputMode="adjustResize" >
+31-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:4:219-261
+32            <intent-filter>
+32-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:5:7-8:23
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:6:9-60
+33-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:6:17-58
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:7:9-68
+35-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:7:19-66
+36            </intent-filter>
+37            <intent-filter>
+37-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:9:7-14:23
+38                <action android:name="android.intent.action.VIEW" />
+38-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:10:9-60
+38-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:10:17-58
+39
+40                <category android:name="android.intent.category.DEFAULT" />
+40-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:11:9-67
+40-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:11:19-65
+41                <category android:name="android.intent.category.BROWSABLE" />
+41-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:12:9-69
+41-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:12:19-67
+42
+43                <data android:scheme="dadsapp" />
+43-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:13:9-41
+43-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:13:15-39
+44            </intent-filter>
+45        </activity>
+46
+47        <meta-data
+47-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-13:36
+48            android:name="app_data_collection_default_enabled"
+48-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-63
+49            android:value="true" />
+49-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-33
+50
+51        <service
+51-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-23:19
+52            android:name="com.google.firebase.components.ComponentDiscoveryService"
+52-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-84
+53            android:directBootAware="true"
+53-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-43
+54            android:exported="false" >
+54-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+55            <meta-data
+55-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-22:85
+56                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+56-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:17-120
+57                android:value="com.google.firebase.components.ComponentRegistrar" />
+57-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:17-82
+58            <meta-data
+58-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:67:13-69:85
+59                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+59-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:68:17-109
+60                android:value="com.google.firebase.components.ComponentRegistrar" />
+60-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:69:17-82
+61            <meta-data
+61-->[com.google.firebase:firebase-database:20.0.6] C:\Users\sagar\.gradle\caches\transforms-3\039020c9c62f1246a863c9c5195443e3\transformed\jetified-firebase-database-20.0.6\AndroidManifest.xml:32:13-34:85
+62                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+62-->[com.google.firebase:firebase-database:20.0.6] C:\Users\sagar\.gradle\caches\transforms-3\039020c9c62f1246a863c9c5195443e3\transformed\jetified-firebase-database-20.0.6\AndroidManifest.xml:33:17-109
+63                android:value="com.google.firebase.components.ComponentRegistrar" />
+63-->[com.google.firebase:firebase-database:20.0.6] C:\Users\sagar\.gradle\caches\transforms-3\039020c9c62f1246a863c9c5195443e3\transformed\jetified-firebase-database-20.0.6\AndroidManifest.xml:34:17-82
+64        </service>
+65
+66        <provider
+66-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:9-29:38
+67            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+67-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-88
+68            android:authorities="com.dadsapp.reactnativefirebaseappinitprovider"
+68-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:13-86
+69            android:exported="false"
+69-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-37
+70            android:initOrder="99" />
+70-->[:react-native-firebase_app] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-35
+71
+72        <activity
+72-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:27:9-44:20
+73            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+73-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:28:13-80
+74            android:excludeFromRecents="true"
+74-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:29:13-46
+75            android:exported="true"
+75-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:30:13-36
+76            android:launchMode="singleTask"
+76-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:31:13-44
+77            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+77-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:32:13-72
+78            <intent-filter>
+78-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:33:13-43:29
+79                <action android:name="android.intent.action.VIEW" />
+79-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:10:9-60
+79-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:10:17-58
+80
+81                <category android:name="android.intent.category.DEFAULT" />
+81-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:11:9-67
+81-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:11:19-65
+82                <category android:name="android.intent.category.BROWSABLE" />
+82-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:12:9-69
+82-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:12:19-67
+83
+84                <data
+84-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:13:9-41
+85                    android:host="firebase.auth"
+86                    android:path="/"
+87                    android:scheme="genericidp" />
+87-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:13:15-39
+88            </intent-filter>
+89        </activity>
+90        <activity
+90-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:45:9-62:20
+91            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+91-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:46:13-79
+92            android:excludeFromRecents="true"
+92-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:47:13-46
+93            android:exported="true"
+93-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:48:13-36
+94            android:launchMode="singleTask"
+94-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:49:13-44
+95            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+95-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:50:13-72
+96            <intent-filter>
+96-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\sagar\.gradle\caches\transforms-3\2417818fc5d4954eb8b86fdd11650340\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:51:13-61:29
+97                <action android:name="android.intent.action.VIEW" />
+97-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:10:9-60
+97-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:10:17-58
+98
+99                <category android:name="android.intent.category.DEFAULT" />
+99-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:11:9-67
+99-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:11:19-65
+100                <category android:name="android.intent.category.BROWSABLE" />
+100-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:12:9-69
+100-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:12:19-67
+101
+102                <data
+102-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:13:9-41
+103                    android:host="firebase.auth"
+104                    android:path="/"
+105                    android:scheme="recaptcha" />
+105-->C:\Users\sagar\Documents\Final-Dads-App\dadsApp\android\app\src\main\AndroidManifest.xml:13:15-39
+106            </intent-filter>
+107        </activity>
+108
+109        <provider
+109-->[:react-native-image-picker] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+110            android:name="com.imagepicker.ImagePickerProvider"
+110-->[:react-native-image-picker] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-63
+111            android:authorities="com.dadsapp.imagepickerprovider"
+111-->[:react-native-image-picker] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-71
+112            android:exported="false"
+112-->[:react-native-image-picker] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+113            android:grantUriPermissions="true" >
+113-->[:react-native-image-picker] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+114            <meta-data
+114-->[:react-native-image-picker] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-17:70
+115                android:name="android.support.FILE_PROVIDER_PATHS"
+115-->[:react-native-image-picker] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-67
+116                android:resource="@xml/imagepicker_provider_paths" />
+116-->[:react-native-image-picker] C:\Users\sagar\Documents\Final-Dads-App\dadsApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-67
+117        </provider>
+118        <provider
+118-->[com.google.firebase:firebase-common:20.1.2] C:\Users\sagar\.gradle\caches\transforms-3\4d353ab3a985b1b1909bfac6594cef3b\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:26:9-31:39
+119            android:name="com.google.firebase.provider.FirebaseInitProvider"
+119-->[com.google.firebase:firebase-common:20.1.2] C:\Users\sagar\.gradle\caches\transforms-3\4d353ab3a985b1b1909bfac6594cef3b\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:27:13-77
+120            android:authorities="com.dadsapp.firebaseinitprovider"
+120-->[com.google.firebase:firebase-common:20.1.2] C:\Users\sagar\.gradle\caches\transforms-3\4d353ab3a985b1b1909bfac6594cef3b\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:28:13-72
+121            android:directBootAware="true"
+121-->[com.google.firebase:firebase-common:20.1.2] C:\Users\sagar\.gradle\caches\transforms-3\4d353ab3a985b1b1909bfac6594cef3b\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:29:13-43
+122            android:exported="false"
+122-->[com.google.firebase:firebase-common:20.1.2] C:\Users\sagar\.gradle\caches\transforms-3\4d353ab3a985b1b1909bfac6594cef3b\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:30:13-37
+123            android:initOrder="100" />
+123-->[com.google.firebase:firebase-common:20.1.2] C:\Users\sagar\.gradle\caches\transforms-3\4d353ab3a985b1b1909bfac6594cef3b\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:31:13-36
+124
+125        <activity
+125-->[com.google.android.gms:play-services-auth:20.2.0] C:\Users\sagar\.gradle\caches\transforms-3\842cebffa936c3c09cd840a31edde146\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:23:9-27:75
+126            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+126-->[com.google.android.gms:play-services-auth:20.2.0] C:\Users\sagar\.gradle\caches\transforms-3\842cebffa936c3c09cd840a31edde146\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:24:13-93
+127            android:excludeFromRecents="true"
+127-->[com.google.android.gms:play-services-auth:20.2.0] C:\Users\sagar\.gradle\caches\transforms-3\842cebffa936c3c09cd840a31edde146\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:25:13-46
+128            android:exported="false"
+128-->[com.google.android.gms:play-services-auth:20.2.0] C:\Users\sagar\.gradle\caches\transforms-3\842cebffa936c3c09cd840a31edde146\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:26:13-37
+129            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+129-->[com.google.android.gms:play-services-auth:20.2.0] C:\Users\sagar\.gradle\caches\transforms-3\842cebffa936c3c09cd840a31edde146\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:27:13-72
+130        <!--
+131            Service handling Google Sign-In user revocation. For apps that do not integrate with
+132            Google Sign-In, this service will never be started.
+133        -->
+134        <service
+134-->[com.google.android.gms:play-services-auth:20.2.0] C:\Users\sagar\.gradle\caches\transforms-3\842cebffa936c3c09cd840a31edde146\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:33:9-37:51
+135            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+135-->[com.google.android.gms:play-services-auth:20.2.0] C:\Users\sagar\.gradle\caches\transforms-3\842cebffa936c3c09cd840a31edde146\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:34:13-89
+136            android:exported="true"
+136-->[com.google.android.gms:play-services-auth:20.2.0] C:\Users\sagar\.gradle\caches\transforms-3\842cebffa936c3c09cd840a31edde146\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:35:13-36
+137            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+137-->[com.google.android.gms:play-services-auth:20.2.0] C:\Users\sagar\.gradle\caches\transforms-3\842cebffa936c3c09cd840a31edde146\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:36:13-107
+138            android:visibleToInstantApps="true" />
+138-->[com.google.android.gms:play-services-auth:20.2.0] C:\Users\sagar\.gradle\caches\transforms-3\842cebffa936c3c09cd840a31edde146\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:37:13-48
+139
+140        <activity
+140-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sagar\.gradle\caches\transforms-3\ddf717fac56691179a7a197ae5730b3a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+141            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+141-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sagar\.gradle\caches\transforms-3\ddf717fac56691179a7a197ae5730b3a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+142            android:exported="false"
+142-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sagar\.gradle\caches\transforms-3\ddf717fac56691179a7a197ae5730b3a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+143            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+143-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sagar\.gradle\caches\transforms-3\ddf717fac56691179a7a197ae5730b3a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+144
+145        <meta-data
+145-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sagar\.gradle\caches\transforms-3\35d0da91f93e03675f2e43227b6de8b1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+146            android:name="com.google.android.gms.version"
+146-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sagar\.gradle\caches\transforms-3\35d0da91f93e03675f2e43227b6de8b1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+147            android:value="@integer/google_play_services_version" />
+147-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sagar\.gradle\caches\transforms-3\35d0da91f93e03675f2e43227b6de8b1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+148    </application>
+149
+150</manifest>

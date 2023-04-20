@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "541837863343",
+    "project_id": "dadsapp-6a758",
+    "storage_bucket": "dadsapp-6a758.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541837863343:android:42109dd7f007831ba9675a",
+        "android_client_info": {
+          "package_name": "com.dadsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541837863343-pp090i72vomk1searu2mr12hargun0eg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_8izIU_xt53MNFmlw8WtN014uYXqPOjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541837863343-pp090i72vomk1searu2mr12hargun0eg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
